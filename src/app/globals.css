@@ -66,35 +66,40 @@
   --radius-xl: 1.5rem;
 }
 
-body {
-  background: var(--color-background);
-  color: var(--color-foreground);
-  font-family: var(--font-body), system-ui, sans-serif;
-}
+/* Base resets live in Tailwind's own cascade layer so utility classes
+   (e.g. no-underline on nav links) can still override them — an
+   unlayered rule here would beat any utility regardless of specificity. */
+@layer base {
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body), system-ui, sans-serif;
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading), system-ui, sans-serif;
-  font-weight: 700;
-  color: var(--color-foreground);
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading), system-ui, sans-serif;
+    font-weight: 700;
+    color: var(--color-foreground);
+  }
 
-p {
-  max-width: 65ch;
-}
+  p {
+    max-width: 65ch;
+  }
 
-/* Underlined by default so links are distinguishable by more than
-   color alone */
-a {
-  color: var(--color-primary);
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
-}
+  /* Underlined by default so links are distinguishable by more than
+     color alone */
+  a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
 
-a:hover {
-  color: var(--color-primary-hover);
+  a:hover {
+    color: var(--color-primary-hover);
+  }
 }
