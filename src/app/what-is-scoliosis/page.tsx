@@ -16,7 +16,7 @@ const sections = [
 
 export default function WhatIsScoliosisPage() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <main id="main-content" tabIndex={-1} className="mx-auto max-w-3xl px-6 py-16">
       <h1 className="text-4xl mb-4">What is Scoliosis</h1>
       <p className="text-lg text-muted mb-10">
         [Content: short framing paragraph — what this page covers and who

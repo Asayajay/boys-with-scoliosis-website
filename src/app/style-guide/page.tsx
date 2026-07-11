@@ -21,7 +21,7 @@ const swatches: Array<{ name: string; className: string; hex: string }> = [
 // public site navigation.
 export default function StyleGuidePage() {
   return (
-    <main className="mx-auto max-w-3xl px-6 py-16">
+    <main id="main-content" tabIndex={-1} className="mx-auto max-w-3xl px-6 py-16">
       <h1 className="text-4xl mb-2">Style guide</h1>
       <p className="text-muted mb-12">
         Internal reference for the color, type, and tone system. Not linked from

@@ -26,7 +26,7 @@ const quickLinks = [
 
 export default function Home() {
   return (
-    <main>
+    <main id="main-content" tabIndex={-1}>
       {/* Hero */}
       <section className="bg-subtle">
         <div className="mx-auto max-w-5xl px-6 py-20 text-center">
