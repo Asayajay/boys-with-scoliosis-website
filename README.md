@@ -25,3 +25,7 @@ Open [http://localhost:3000](http://localhost:3000).
 npm run build   # production build
 npm run lint    # eslint
 ```
+
+## Deployment
+
+Deploys to Vercel with no custom config: import this repo at [vercel.com/new](https://vercel.com/new), it auto-detects Next.js, and every push to `main` deploys to production with PRs getting preview URLs. `engines.node` in `package.json` pins the Node version Vercel builds with.
