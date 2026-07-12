@@ -40,7 +40,31 @@ export default function WhatIsScoliosisPage() {
         <h2 id="overview-heading" className="text-2xl mb-3">
           Overview
         </h2>
-        <p>[Content: plain-language explanation of what scoliosis is]</p>
+        <p className="mb-4">
+          Scoliosis is a sideways curve in the spine. Looked at from behind, a
+          typical spine runs in a fairly straight line from the base of the
+          neck down to the hips. With scoliosis, it curves off to one side —
+          often into a C-shape or an S-shape — and usually twists slightly
+          along with the curve rather than staying flat.
+        </p>
+        <p className="mb-4">
+          It&apos;s more common than most people think, showing up in
+          somewhere around 2 to 3 out of every 100 adolescents. It typically
+          appears or becomes noticeable during a growth spurt — often between
+          ages 10 and 15, right around puberty — which is why it&apos;s so
+          often caught in middle school or early high school rather than
+          earlier.
+        </p>
+        <p>
+          In the large majority of cases, called{" "}
+          <em>idiopathic scoliosis</em>, there&apos;s no single identifiable
+          cause. It isn&apos;t caused by a heavy backpack, bad posture, how
+          you sit, or any sport you played, and nothing you or your parents
+          did or didn&apos;t do made it happen. A diagnosis on its own also
+          doesn&apos;t say much about severity — curves are measured in
+          degrees, and that number, not the diagnosis itself, is what
+          actually determines what happens next.
+        </p>
       </section>
 
       <section id="types" aria-labelledby="types-heading" className="mb-12">
