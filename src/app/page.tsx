@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const audiencePaths = [
@@ -70,6 +71,28 @@ export default function Home() {
               <p className="text-muted text-base">{path.description}</p>
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* My story */}
+      <section aria-labelledby="my-story-heading" className="mx-auto max-w-5xl px-6 py-16">
+        <div className="grid gap-10 sm:grid-cols-[240px_1fr] items-center">
+          <Image
+            src="/images/ajay-headshot.png"
+            alt="Ajay, who created this site"
+            width={240}
+            height={240}
+            className="rounded-xl object-cover mx-auto sm:mx-0"
+          />
+          <div>
+            <h2 id="my-story-heading" className="text-2xl mb-3">
+              My Story
+            </h2>
+            <p>
+              [Content: personal story goes here — why this site exists, told
+              in first person]
+            </p>
+          </div>
         </div>
       </section>
 
