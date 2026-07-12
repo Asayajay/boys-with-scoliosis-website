@@ -96,19 +96,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Reassurance / credibility strip */}
-      <section aria-labelledby="credibility-heading" className="bg-primary-subtle">
-        <div className="mx-auto max-w-5xl px-6 py-12 text-center">
-          <h2 id="credibility-heading" className="text-xl mb-2">
-            [Content: reassurance statement — e.g. clinical review note]
-          </h2>
-          <p className="mx-auto text-muted">
-            [Content: expand on who reviews this content and why it can be
-            trusted]
-          </p>
-        </div>
-      </section>
-
       {/* Quick links */}
       <section aria-labelledby="quick-links-heading" className="mx-auto max-w-5xl px-6 py-16">
         <h2 id="quick-links-heading" className="text-2xl mb-6 text-center">
